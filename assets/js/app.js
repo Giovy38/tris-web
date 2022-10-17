@@ -4,12 +4,12 @@ class Symbol{
     }
 }
 // add symbol function
-const addSymbol = async (id) => {
-    const symboltras = await document.getElementById(`${id}-h1`);
-    await symboltras.classList.remove('trasparent')
+const addSymbol =  (id) => {
+    const symboltras =  document.getElementById(`${id}-h1`);
+    symboltras.classList.remove('trasparent')
 };
 
-const changeSymbol = async () => {
+const changeSymbol = () => {
 
     const symbolArray = Array.from(document.getElementsByClassName('trasparent'));
     symbolArray.forEach(element => {
@@ -29,9 +29,9 @@ const changeSymbol = async () => {
 
 // zero 
 const zero = document.getElementById('zero');
-const callZeroSymbol = async () => {
-    await addSymbol('zero');
-    await changeSymbol();
+const callZeroSymbol =  () => {
+     addSymbol('zero');
+     changeSymbol();
 }
 zero.addEventListener('click', callZeroSymbol);
 
@@ -39,65 +39,65 @@ zero.addEventListener('click', callZeroSymbol);
 
 // one
 const one = document.getElementById('one');
-const callOneSymbol = async () =>{
-    await addSymbol('one');
-    await changeSymbol();
+const callOneSymbol =  () =>{
+     addSymbol('one');
+     changeSymbol();
 } 
 one.addEventListener('click', callOneSymbol);
 
 // two
 const two = document.getElementById('two');
-const callTwoSymbol = async ()  => {
-     await addSymbol('two');
-     await changeSymbol();
+const callTwoSymbol =  ()  => {
+      addSymbol('two');
+      changeSymbol();
 }
 two.addEventListener('click', callTwoSymbol);
 
 // three
 const three = document.getElementById('three');
-const callThreeSymbol = async () => {
-    await addSymbol('three');
-    await changeSymbol();
+const callThreeSymbol =  () => {
+     addSymbol('three');
+     changeSymbol();
 }
 three.addEventListener('click', callThreeSymbol);
 
 // four
 const four = document.getElementById('four');
-const callFourSymbol = async () => {
-    await addSymbol('four');
-    await changeSymbol();
+const callFourSymbol =  () => {
+     addSymbol('four');
+     changeSymbol();
 }
 four.addEventListener('click', callFourSymbol);
 
 // five
 const five = document.getElementById('five');
-const callFiveSymbol = async () => {
-    await addSymbol('five');
-    await changeSymbol();
+const callFiveSymbol =  () => {
+     addSymbol('five');
+     changeSymbol();
 }
 five.addEventListener('click', callFiveSymbol);
 
 // six
 const six = document.getElementById('six');
-const callSixSymbol = async () => {
-    await addSymbol('six');
-    await changeSymbol();
+const callSixSymbol =  () => {
+     addSymbol('six');
+     changeSymbol();
 }
 six.addEventListener('click', callSixSymbol);
 
 // seven
 const seven = document.getElementById('seven');
-const callSevenSymbol = async () => {
-    await addSymbol('seven');
-    await changeSymbol();
+const callSevenSymbol =  () => {
+     addSymbol('seven');
+     changeSymbol();
 }
 seven.addEventListener('click', callSevenSymbol);
 
 // eight
 const eight = document.getElementById('eight');
-const callEightSymbol = async () => {
-    await addSymbol('eight');
-    await changeSymbol();
+const callEightSymbol =  () => {
+     addSymbol('eight');
+     changeSymbol();
 }
 eight.addEventListener('click', callEightSymbol);
 
