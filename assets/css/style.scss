@@ -1,0 +1,107 @@
+@import './color';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: $first-bg;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trispace', sans-serif;
+    padding: 1rem;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.tris-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    &-point{
+        background-color: #9801fd;
+        width: 120px;
+        height: 120px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .symbol{
+            font-size: 105px;
+            font-family: 'Trispace', sans-serif;
+        }
+        .trasparent{
+            opacity: 0;
+            &:hover{
+                opacity: 100%;
+                color: grey;
+            }
+        }
+        &:hover{
+        background-color: #4D0080;
+        }
+    }
+
+    #zero{
+        border-radius: 10px 0 0 0;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    #one{
+        border-radius:  0 0 0 0;
+        border-right: 3px solid black;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    #two{
+        border-radius:  0 10px 0 0;
+        border-left: 3px solid black;
+        border-bottom: 3px solid black;
+        box-shadow: 5px 0 5px -2px black;
+    }
+    #three{
+        border-radius:  0 0 0 0;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+    }
+    #four{
+        border: 3px solid black;
+    }
+    #five{
+        border-radius:  0 0 0 0;
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        box-shadow: 5px 0 5px -2px black;
+    }
+    #six{
+        border-radius:  0 0 0 10px;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        box-shadow: 0 5px 5px -2px black;
+    }
+    #seven{
+        border-radius:  0 0 0 0;
+        border-right: 3px solid black;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
+        box-shadow: 0 5px 5px -2px black;
+    }
+    #eight{
+        border-radius:  0 0 10px 0;
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        box-shadow: 3px 3px 5px black;
+    }
+   
+   
+}

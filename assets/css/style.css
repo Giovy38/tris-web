@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #4D0080, #8532bb, #9900FF, #6a12a6, #7C00CC);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Trispace", sans-serif;
+  padding: 1rem;
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+.tris-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+.tris-container-point {
+  background-color: #9801fd;
+  width: 120px;
+  height: 120px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tris-container-point .symbol {
+  font-size: 105px;
+  font-family: "Trispace", sans-serif;
+}
+.tris-container-point .trasparent {
+  opacity: 0;
+}
+.tris-container-point .trasparent:hover {
+  opacity: 100%;
+  color: grey;
+}
+.tris-container-point:hover {
+  background-color: #4D0080;
+}
+.tris-container #zero {
+  border-radius: 10px 0 0 0;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.tris-container #one {
+  border-radius: 0 0 0 0;
+  border-right: 3px solid black;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.tris-container #two {
+  border-radius: 0 10px 0 0;
+  border-left: 3px solid black;
+  border-bottom: 3px solid black;
+  box-shadow: 5px 0 5px -2px black;
+}
+.tris-container #three {
+  border-radius: 0 0 0 0;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+.tris-container #four {
+  border: 3px solid black;
+}
+.tris-container #five {
+  border-radius: 0 0 0 0;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  box-shadow: 5px 0 5px -2px black;
+}
+.tris-container #six {
+  border-radius: 0 0 0 10px;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  box-shadow: 0 5px 5px -2px black;
+}
+.tris-container #seven {
+  border-radius: 0 0 0 0;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
+  box-shadow: 0 5px 5px -2px black;
+}
+.tris-container #eight {
+  border-radius: 0 0 10px 0;
+  border-left: 3px solid black;
+  border-top: 3px solid black;
+  box-shadow: 3px 3px 5px black;
+}/*# sourceMappingURL=style.css.map */
