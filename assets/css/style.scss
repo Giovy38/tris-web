@@ -54,24 +54,27 @@ body{
         border-radius: 10px 0 0 0;
         border-right: 3px solid black;
         border-bottom: 3px solid black;
+        box-shadow: 0 -5px 5px -3px #c274f5,-5px 0 5px -3px #c274f5;
     }
     #one{
         border-radius:  0 0 0 0;
         border-right: 3px solid black;
         border-left: 3px solid black;
         border-bottom: 3px solid black;
+        box-shadow: 0 -5px 5px -3px #c274f5;
     }
     #two{
         border-radius:  0 10px 0 0;
         border-left: 3px solid black;
         border-bottom: 3px solid black;
-        box-shadow: 5px 0 5px -2px black;
+        box-shadow: 5px 0 5px -2px black, 0 -5px 5px -2px #c274f5 ;
     }
     #three{
         border-radius:  0 0 0 0;
         border-right: 3px solid black;
         border-top: 3px solid black;
         border-bottom: 3px solid black;
+        box-shadow: -5px 0 5px -3px #c274f5;
     }
     #four{
         border: 3px solid black;
@@ -87,7 +90,7 @@ body{
         border-radius:  0 0 0 10px;
         border-right: 3px solid black;
         border-top: 3px solid black;
-        box-shadow: 0 5px 5px -2px black;
+        box-shadow: 0 5px 5px -2px black,-5px 0 5px -2px #c274f5;
     }
     #seven{
         border-radius:  0 0 0 0;

@@ -13,6 +13,7 @@ const addSymbol = async (id) => {
 const zero = document.getElementById('zero');
 const callZeroSymbol = () => addSymbol('zero');
 zero.addEventListener('click', callZeroSymbol);
+console.log(zero.innerText);
 
 
 // one
