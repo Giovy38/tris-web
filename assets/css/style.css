@@ -23,6 +23,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0;
+  position: relative;
 }
 .tris-container-point {
   background-color: #9801fd;
@@ -102,4 +103,42 @@ body {
   border-left: 3px solid black;
   border-top: 3px solid black;
   box-shadow: 3px 3px 5px black;
+}
+
+.victory-container {
+  position: absolute;
+  left: 313px;
+  top: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #6a12a6;
+  height: 490px;
+  width: 530px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black, -5px -5px 20px #9900FF;
+  -webkit-backdrop-filter: blur(120px);
+          backdrop-filter: blur(120px);
+  display: none;
+}
+.victory-container h1 {
+  text-transform: capitalize;
+  font-size: 40px;
+}
+.victory-container #victory-symbol {
+  font-size: 150px;
+}
+.victory-container .img-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem 2rem;
+}
+.victory-container .img-container .img {
+  width: 100px;
+  transform: scaleX(-1);
 }/*# sourceMappingURL=style.css.map */
