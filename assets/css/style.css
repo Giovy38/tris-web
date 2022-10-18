@@ -19,11 +19,15 @@ body {
 }
 
 .tris-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 0;
+       column-gap: 0;
+  row-gap: 0;
   gap: 0;
-  position: relative;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .tris-container-point {
   background-color: #9801fd;
@@ -107,15 +111,16 @@ body {
 
 .victory-container {
   position: absolute;
-  left: 313px;
-  top: 145px;
+  left: 0;
+  top: 0;
+  margin: 3rem 0 0 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #6a12a6;
-  height: 490px;
-  width: 530px;
+  height: 85vh;
+  width: 90vw;
   border-radius: 10px;
   box-shadow: 5px 5px 10px black, -5px -5px 20px #9900FF;
   -webkit-backdrop-filter: blur(120px);
@@ -126,19 +131,26 @@ body {
   text-transform: capitalize;
   font-size: 40px;
 }
+.victory-container .congrat {
+  margin-top: 40px;
+}
+.victory-container .player {
+  margin-bottom: 40px;
+}
 .victory-container #victory-symbol {
   font-size: 150px;
 }
 .victory-container .img-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1rem 2rem;
+  opacity: 20%;
 }
 .victory-container .img-container .img {
   width: 100px;
+  transform: rotate(20deg);
+}
+.victory-container .img-container .reverse-img {
   transform: scaleX(-1);
+  transform: rotate(-20deg);
 }/*# sourceMappingURL=style.css.map */
