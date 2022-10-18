@@ -19,8 +19,24 @@ const changeSymbol = () => {
             element.textContent = 'X'
         }
     });
+}
 
-    // console.log(symbolArray);
+// draw control 
+const drawControl = () => {
+    const draw = document.getElementsByClassName('trasparent');
+    // console.log(draw);
+    const drawArray = Array.from(draw);
+    if(drawArray.length === 0){
+        victoryForm.classList.remove('hidden');
+        const symbolVictory = document.getElementById('victory-symbol');
+        symbolVictory.innerHTML = `DRAW`
+
+        const congrat = document.getElementById('congrat');
+        congrat.innerHTML = `Sorry this time is a`;
+
+        const playerText = document.getElementById('player');
+        playerText.classList.add('hidden');
+    }
 }
 
 // add the click event 
@@ -33,6 +49,7 @@ function onClick(e){
         changeSymbol();
     }
     victoryControl();
+    drawControl()
 }
 
 // replay button 
@@ -47,6 +64,12 @@ function replayGame(){
     })
     isWin = false;
     victoryForm.classList.add('hidden');
+
+    const congrat = document.getElementById('congrat');
+    congrat.innerHTML = `congratulation the Winner is`;
+
+    const playerText = document.getElementById('player');
+    playerText.classList.remove('hidden');
 }
 
 // victory function 
@@ -115,3 +138,7 @@ for (let index = 2; index < 3; index++) {
 
     }
 }
+
+
+
+
