@@ -28,8 +28,10 @@ trisContainer.addEventListener('click', onClick);
 
 function onClick(e){
     const selected = e.target;
-    selected.classList.remove('trasparent');
-    changeSymbol();
+    if(e.target.classList.contains('trasparent')){
+        selected.classList.remove('trasparent');
+        changeSymbol();
+    }
     victoryControl();
 }
 
