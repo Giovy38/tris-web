@@ -79,6 +79,33 @@ function victoryControl(){
         }
     }
 
+// controllo orizontale
+// 048
+// 246
+let tr = 4 //temporany index (048)
+
+for (let index = 0; index < 1; index++) {
+    for (let j = 0; j < 1; j++) {
+        if (symbolArray[index].innerHTML === symbolArray[index+tr].innerHTML && symbolArray[index].innerHTML === symbolArray[index+tr+tr].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+tr].classList.contains('trasparent')  && !symbolArray[index+tr+tr].classList.contains('trasparent') ) {
+            winnerSymbol = symbolArray[index].innerHTML
+            isWin = true;
+        }
+    }
+}
+
+tr = 2  //temporany index (246)
+
+for (let index = 2; index < 3; index++) {
+    for (let j = 0; j < 1; j++) {
+        if (symbolArray[index].innerHTML === symbolArray[index+tr].innerHTML && symbolArray[index].innerHTML === symbolArray[index+tr+tr].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+tr].classList.contains('trasparent')  && !symbolArray[index+tr+tr].classList.contains('trasparent') ) {
+            winnerSymbol = symbolArray[index].innerHTML
+            isWin = true;
+        }
+    }
+}
+
+
+
     if(isWin){
         victoryForm.classList.remove('hidden');
         const symbolVictory = document.getElementById('victory-symbol');
