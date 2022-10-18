@@ -65,6 +65,20 @@ function victoryControl(){
         }
     }
 
+// controllo verticale
+// 036 
+// 147
+// 258
+
+    for (let index = 0; index < 3; index++) {
+        for (let j = 0; j < 1; j++) {
+            if (symbolArray[index].innerHTML === symbolArray[index+3].innerHTML && symbolArray[index].innerHTML === symbolArray[index+6].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+3].classList.contains('trasparent')  && !symbolArray[index+6].classList.contains('trasparent') ) {
+                winnerSymbol = symbolArray[index].innerHTML
+                isWin = true;
+            }
+        }
+    }
+
     if(isWin){
         victoryForm.classList.remove('hidden');
         const symbolVictory = document.getElementById('victory-symbol');
