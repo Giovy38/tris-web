@@ -1,4 +1,5 @@
 @import './color';
+@import './media_queries';
 
 *{
     margin: 0;
@@ -18,6 +19,11 @@ body{
     padding: 1rem;
     font-size: 30px;
     margin-bottom: 100px;
+    #titleGame{
+        @include mobile{
+            text-align: center;
+        }
+    }
 }
 
 .tris-container{
@@ -31,6 +37,11 @@ body{
     width: 360px;
     margin-left: auto;
     margin-right: auto;
+
+    @include mobile{
+        width: 300px;
+    }
+
     &-point{
         background-color: #9801fd;
         width: 120px;
@@ -40,6 +51,11 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include mobile{
+            width: 100px;
+            height: 100px;
+        }
         .symbol{
             font-size: 105px;
             font-family: 'Trispace', sans-serif;
@@ -128,6 +144,12 @@ body{
     border-radius: 10px;
     box-shadow: 5px 5px 10px black, -5px -5px 20px #9900FF;
     backdrop-filter: blur(120px);
+    overflow: hidden;
+    @include mobile{
+        width: 90vw;
+        overflow: hidden;
+        margin: 1rem;
+    }
     
     h1{
         text-transform: capitalize;
@@ -135,6 +157,10 @@ body{
     }
     .congrat{
         margin-top: 40px;
+        @include mobile{
+            text-align: center;
+            padding: 0.5rem;
+        }
     }
     .player{
         margin-bottom: 40px;
@@ -143,6 +169,9 @@ body{
         font-size: 150px;
         color: rgb(163, 13, 13);
         animation: zoom-in-out 3s linear infinite ;
+        @include mobile{
+            font-size: 70px;
+        }
        
         @keyframes zoom-in-out {
             0% {

@@ -17,6 +17,11 @@ body {
   font-size: 30px;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 376px) {
+  .header #titleGame {
+    text-align: center;
+  }
+}
 
 .tris-container {
   display: grid;
@@ -29,6 +34,11 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 376px) {
+  .tris-container {
+    width: 300px;
+  }
+}
 .tris-container-point {
   background-color: #9801fd;
   width: 120px;
@@ -38,6 +48,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 376px) {
+  .tris-container-point {
+    width: 100px;
+    height: 100px;
+  }
 }
 .tris-container-point .symbol {
   font-size: 105px;
@@ -125,6 +141,14 @@ body {
   box-shadow: 5px 5px 10px black, -5px -5px 20px #9900FF;
   -webkit-backdrop-filter: blur(120px);
           backdrop-filter: blur(120px);
+  overflow: hidden;
+}
+@media screen and (max-width: 376px) {
+  .victory-container {
+    width: 90vw;
+    overflow: hidden;
+    margin: 1rem;
+  }
 }
 .victory-container h1 {
   text-transform: capitalize;
@@ -132,6 +156,12 @@ body {
 }
 .victory-container .congrat {
   margin-top: 40px;
+}
+@media screen and (max-width: 376px) {
+  .victory-container .congrat {
+    text-align: center;
+    padding: 0.5rem;
+  }
 }
 .victory-container .player {
   margin-bottom: 40px;
@@ -141,6 +171,11 @@ body {
   color: rgb(163, 13, 13);
   -webkit-animation: zoom-in-out 3s linear infinite;
           animation: zoom-in-out 3s linear infinite;
+}
+@media screen and (max-width: 376px) {
+  .victory-container #victory-symbol {
+    font-size: 70px;
+  }
 }
 @-webkit-keyframes zoom-in-out {
   0% {
