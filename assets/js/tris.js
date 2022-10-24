@@ -81,13 +81,13 @@ function victoryControl(){
 // 678 
 
     for (let index = 0; index < symbolArray.length; index+= 3) {
-        for (let j = 0; j < 1; j++) {
+       
             if (symbolArray[index].innerHTML === symbolArray[index+1].innerHTML && symbolArray[index].innerHTML === symbolArray[index+2].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+1].classList.contains('trasparent')  && !symbolArray[index+2].classList.contains('trasparent') ) {
                 winnerSymbol = symbolArray[index].innerHTML
                 isWin = true;
             }
             
-        }
+        
     }
 
 // controllo verticale
@@ -96,38 +96,35 @@ function victoryControl(){
 // 258
 
     for (let index = 0; index < 3; index++) {
-        for (let j = 0; j < 1; j++) {
+        
             if (symbolArray[index].innerHTML === symbolArray[index+3].innerHTML && symbolArray[index].innerHTML === symbolArray[index+6].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+3].classList.contains('trasparent')  && !symbolArray[index+6].classList.contains('trasparent') ) {
                 winnerSymbol = symbolArray[index].innerHTML
                 isWin = true;
             }
-        }
+        
     }
 
 // controllo orizontale
 // 048
 // 246
 let tr = 4 //temporany index (048)
+let index = 0; 
 
-for (let index = 0; index < 1; index++) {
-    for (let j = 0; j < 1; j++) {
+   
         if (symbolArray[index].innerHTML === symbolArray[index+tr].innerHTML && symbolArray[index].innerHTML === symbolArray[index+tr+tr].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+tr].classList.contains('trasparent')  && !symbolArray[index+tr+tr].classList.contains('trasparent') ) {
             winnerSymbol = symbolArray[index].innerHTML
             isWin = true;
         }
-    }
-}
+    
 
 tr = 2  //temporany index (246)
+index = 2; // temporany index
 
-for (let index = 2; index < 3; index++) {
-    for (let j = 0; j < 1; j++) {
+
         if (symbolArray[index].innerHTML === symbolArray[index+tr].innerHTML && symbolArray[index].innerHTML === symbolArray[index+tr+tr].innerHTML && !symbolArray[index].classList.contains('trasparent')  && !symbolArray[index+tr].classList.contains('trasparent')  && !symbolArray[index+tr+tr].classList.contains('trasparent') ) {
             winnerSymbol = symbolArray[index].innerHTML
             isWin = true;
         }
-    }
-}
 
 
 
